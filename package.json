@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-  "node": "16.13.2"
-},
-
+    "node": "16.13.2"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "axios": "^0.26.1",
     "react": "^18.0.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.0.0",

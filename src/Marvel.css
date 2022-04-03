@@ -158,7 +158,7 @@
   font-size: 20px;
   margin: auto;
   color: rgb(42, 215, 6);
-  background-image: url('../public/inputs.jpeg');
+  background-image: url('./public/inputs.jpeg');
   opacity: .8;
   background-size: 100% 100%;
   background-repeat: no-repeat;

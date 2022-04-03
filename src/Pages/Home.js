@@ -1,10 +1,10 @@
 import React,{ useEffect, useState }  from 'react'
 import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
+
 import Roll from 'react-reveal/Roll';
 import Nav from '../components/Nav';
 
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript,
   IoLogoNodejs, IoLogoPython,IoLogoGoogle } from 'react-icons/io';
@@ -65,10 +65,10 @@ return(
               <div className='profilePicDiv'>
                 <div className='profilePicIn'>
                   <div className='profilePicFront'>
-                    <img className='proPic' src='https://i.imgur.com/O9S4EIu.png'/>
+                    <img className='proPic' src='https://i.imgur.com/O9S4EIu.png' alt="Girl in a jacket"/>
                   </div>
                   <div className='profilePicBack'>
-                    <img className='proPic2' src='../../me6.jpeg'/>
+                    <img className='proPic2' src='../../me6.jpeg' alt="Girl in a jacket"/>
                   </div>
                 </div>
               </div>
@@ -280,7 +280,7 @@ return(
                 <button>Visit Website</button>
               </div>
                 <div className='pcMobilePair'>
-                    <img className='pcMock' src='./dbzPc.png'/>
+                    <img className='pcMock' src='./dbzPc.png' alt="Girl in a jacket"/>
                 </div>
               </div>
 
@@ -289,7 +289,7 @@ return(
               <div className='pcMobilePairStrip'>
               </div>
                 <div className='pcMobilePair'>
-                    <img className='pcMock' src='./marvelPc.png'/>
+                    <img className='pcMock' src='./marvelPc.png' alt="Girl in a jacket"/>
                 </div>
                 <div className="gameTitle" >
                   <h1> Marvel Character Library </h1>
@@ -309,7 +309,7 @@ return(
               </div>
                 <div className='pcMobilePair'>
 
-                    <img className='pcMock' src='./cpPc.png'/>
+                    <img className='pcMock' src='./cpPc.png'  alt="Girl in a jacket"/>
                 </div>
 
               </div>
@@ -320,12 +320,12 @@ return(
               </div>
                 <div className='pcMobilePair'>
 
-                    <img className='pcMock' src='./gameDocPc.png'/>
+                    <img className='pcMock' src='./gameDocPc.png' alt="Girl in a jacket"/>
                 </div>
                 <div className="gameTitle" >
                   <h1> Marvel Character Library </h1>
 
-                  <a href='https://www.gamedocs.app/user/RodH'  target="_blank">Visit Website</a>
+                  <a href='https://www.gamedocs.app/user/RodH' rel="noopener noreferrer"  target="_blank">Visit Website</a>
                 </div>
               </div>
 

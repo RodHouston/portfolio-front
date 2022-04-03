@@ -6,9 +6,9 @@ import AddChar from '../components/AddChar'
 import EditChar from '../components/EditChar'
 import Header from '../components/Header'
 
-import ReactDOM from 'react-dom';
+
 import Modal from 'react-modal';
-import ModalPage from '../components/Modal'
+
 
 function App() {
 
@@ -116,7 +116,7 @@ const getCharacters = () => {
                   <div className="box-contents">
                   <h4 className='charName' >{character.name}</h4>
                   <div className='charImgBox ' >
-                    <img className='charImg' src={character.image}/>
+                    <img className='charImg' src={character.image}  alt="Girl in a jacket"/>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const getCharacters = () => {
                   <button id='closeModal' onClick={() => setModalIsOpen(false)}>X</button>
                   <div className='zoomBox' style={{ backgroundColor: toggle ? "red" : "" }} >
                     <div className='zoomImgBox'>
-                      <img className='zoomImg' src={modalData.image}/>
+                      <img className='zoomImg' src={modalData.image}  alt="Girl in a jacket"/>
                     </div>
                     <div className= 'zoomContent'>
                       <h2>{modalData.name}</h2>

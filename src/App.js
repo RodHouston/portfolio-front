@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React from 'react'
 import { Routes, Route, BrowserRouter} from "react-router-dom";
-import AddProfile from './components/AddProfile';
-import ListProfile from './components/ListProfile';
+
+
 import Marvel from './Pages/Marvel'
 import Home from './Pages/Home';
 

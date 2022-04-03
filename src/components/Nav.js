@@ -1,7 +1,7 @@
-import React, {useRef} from 'react'
-import { NavLink } from "react-router-dom";
+import React from 'react'
+import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaTwitterSquare, FaPinterestSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
-import { MdRealEstateAgent} from 'react-icons/md';
+
 
 
  const Nav = () => {
@@ -20,13 +20,12 @@ import { MdRealEstateAgent} from 'react-icons/md';
         </div>
 
       <div className="nav" id='nav'>
-
-        <NavLink  className="links firstLink" to="/marvel">
+        <Link  className="links firstLink" to="/marvel">
           Marvel
-        </NavLink>
-        <NavLink  className="links firstLink" to="/ ">
+        </Link>
+        <Link  className="links firstLink" to="/ ">
           Home
-        </NavLink>
+        </Link>
 
       </div>
     </div>

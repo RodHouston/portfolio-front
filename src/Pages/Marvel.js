@@ -1,11 +1,11 @@
-
+import React from 'react';
 import '../Marvel.css';
 import {useEffect, useState} from 'react'
 import axios from 'axios'
 import AddChar from '../components/AddChar'
 import EditChar from '../components/EditChar'
 import Header from '../components/Header'
-import React from 'react';
+
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import ModalPage from '../components/Modal'
@@ -94,7 +94,7 @@ const getCharacters = () => {
 
 
   return (
-
+<>
     <div className="main">
       <Header/>
       <div className='container'>
@@ -144,6 +144,7 @@ const getCharacters = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

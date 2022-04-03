@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter} from "react-router-dom";
 import AddProfile from './components/AddProfile';
 import ListProfile from './components/ListProfile';
 import Marvel from './Pages/Marvel'
-
+import React from 'react';
 import Home from './Pages/Home';
 
 

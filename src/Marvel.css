@@ -1,0 +1,420 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.headerMarv{
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  background-image: linear-gradient(to right, rgb(214, 21, 2) , rgb(0, 0, 0));
+}
+.headerDiv{
+  width: calc(600px * 8);
+  height: 100%;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  /* background-image: url('../public/header.jpeg'); */
+  background-size: 40% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.headerImg{
+  width: 50%;
+  height: 100%;
+  margin:auto 10px;
+}
+#im2{
+  filter: invert(100%);
+}
+#im3{
+  filter: saturate(8);
+}
+#im4{
+  filter: hue-rotate(90deg);
+}
+.sliderDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  animation: scroll 40s linear infinite;
+}
+.headerDiv::before,
+.headerDiv::after {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0,1) 10%,
+    rgba(0, 0, 0,0)
+  );
+  content: "";
+  height: 75px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.headerDiv::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.headerDiv::before {
+  left: 0;
+  top:0;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-600px * 4));
+  }
+}
+.main{
+  background-image: url('../public/bg.jpeg');
+  background-attachment: fixed;
+}
+
+.container{
+  width: 90%;
+  height: 100%;
+  /* background-color: blue; */
+  backdrop-filter: blur(3px);
+  margin: auto;
+  margin-top: 75px;
+}
+.containerEffect{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+}
+.charContainer{
+  display: flex;
+  flex-wrap:  wrap;
+  /* background-color: purple; */
+  justify-content: center;
+}
+
+.charBox{
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(20, 116, 0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) inset,
+    -5px -5px 10px rgba(0, 0, 0, 0.5) inset;
+
+}
+.charImgBox{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* background-color: red; */
+}
+.charImg{
+  max-width: 100%;
+  max-height: 100%;
+}
+.charName{
+  text-align: center;
+  color: rgb(20, 116, 0);
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(42, 215, 6);
+}
+.formBox{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  overflow: hidden;
+  transition: height 0.5s ease;
+
+}
+
+.form1, .form2{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color: rgb(42, 215, 6);
+  /* background-color: red; */
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.pairs{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 5px;
+}
+.inputs1{
+  width: 100%;
+  font-size: 20px;
+  margin: auto;
+  color: rgb(42, 215, 6);
+  background-image: url('../public/inputs.jpeg');
+  opacity: .8;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 30px 10px;
+  border-bottom-right-radius: 30px 10px;
+  border: none;
+  border-bottom: 2px solid rgb(42, 215, 6);
+  padding: 2px;
+  text-align: center;
+  padding-left: 10px;
+}
+.btn1{
+  color: rgb(20, 116, 0);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 125px;
+  transition: width .5s ease-in;
+  border: 2px solid rgb(20, 116, 0);
+  margin: 10px;
+}
+.btn2{
+  color: rgb(20, 116, 0);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  width:125px;
+  transition: width .5s ease-in;
+  border: 2px solid rgb(20, 116, 0);
+  margin: 10px;
+}
+.btn1:hover{
+  background-color: rgb(46, 255, 3);
+  color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 1);
+  width: 200px;
+}
+.btn2:hover{
+  background-color: rgb(46, 255, 3);
+  color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 1);
+
+}
+
+.formBox2{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 100%;
+  overflow: hidden;
+  transition: height 1s ease;
+  z-index: 2;
+  opacity: 1;
+}
+.zoomBox{
+display: flex;
+flex-direction: row;
+
+}
+.zoomImgBox{
+  display: flex;
+max-width: 500px;
+max-height: 500px;
+min-width: 300px;
+min-height: 300px;
+margin-bottom: 10px;
+border: 2px solid rgb(20, 116, 0);
+}
+.zoomImg{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.zoomContent{
+  color: rgb(46, 255, 3);
+  width: 80%;
+  /* max-height: 100%; */
+  /* background-color: red; */
+  text-align: center;
+  margin:0 auto;
+}
+#closeModal{
+  position: absolute;
+  right: 10px;
+  background-color: red;
+  font-weight: bold;
+}
+#closeModal:hover{
+  transform: scale(1.2);
+}
+.ReactModal__Overlay {
+    opacity: 0;
+    z-index: 4;
+    transition: opacity 2000ms ease-in;
+}
+.ReactModal__Overlay--after-open{
+    opacity: .55;
+}
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+    transition: all 1000ms ease-out;
+}
+.ReactModal__Content{
+    transform:scale(0) rotate(0deg);
+    transition: transform 2000ms ease-in;
+}
+.ReactModal__Content--after-open{
+  opacity: 1;
+  transform:scale(1) rotate(360deg);
+}
+.ReactModal__Content--before-close{
+  transition: all 1000ms ease-out;
+  transform:scale(0) rotate(0deg);
+}
+
+
+.box-contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+  transition: .5s ease;
+  border: 1px solid rgb(42, 215, 6);
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.hover-point {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+#point1 {
+  top: 0;
+  left: 0;
+}
+#point2 {
+  top: 0;
+  left: calc(100% / 3);
+}
+#point3 {
+  top: 0;
+  right: 0;
+}
+#point4{
+  top: calc(100% / 3);
+  left: 0;
+}
+#point5 {
+  top: calc(100% / 3);
+  right: 0;
+}
+#point6 {
+  bottom: 0;
+  left: 0;
+}
+#point7 {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+#point8 {
+  bottom: 0;
+  right: 0;
+}
+
+#point1:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, .8);
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg) scale(1.2);
+}
+#point2:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .8);
+  transform-origin: center top;
+  transform: perspective(1000px) rotateX(10deg) scale(1.2);
+}
+#point3:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, .8);
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg) scale(1.2);
+}
+#point4:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: 15px 5px 50px rgba(0, 0, 0, .8);
+  transform-origin: left center;
+  transform: perspective(1000px) rotateY(-10deg) scale(1.2);
+}
+#point5:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: -15px 5px 50px rgba(0, 0, 0, .8);
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(10deg) scale(1.2);
+}
+#point6:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: 15px -15px 50px rgba(0, 0, 0, .8);
+  transform-origin: right bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg) scale(1.2);
+}
+#point7:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, .8);
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg) scale(1.2);
+}
+#point8:hover ~ .box-contents {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, .8);
+  transform-origin: left bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg) scale(1.2) ;
+
+}
+.box-contents:hover {
+  border: 2px solid rgb(42, 215, 6);
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, .8) ;
+  transform: scale(1.2);
+}
+#deleteBtn {
+  width: 150px;
+  background-color: rgb(120, 4, 0);
+  margin: 15px;
+}
+#deleteBtn:hover {
+  color: rgb(251, 0, 0);
+  background-color: rgba(0, 0, 0,1);
+  border: 3px solid rgb(251, 0, 0);
+}
+#deleteBtn:hover ~ .zoomImgBox{
+
+  border: 3px solid rgb(251, 0, 0);
+}
+
+@media only screen and (max-width: 620px) {
+
+   .zoomBox{
+     flex-direction: column;
+   }
+   .form2{
+     width: 100%;
+   }
+   .inputs1{
+     font-size: 15px;
+   }
+   .pair1{
+     margin: 5px;
+   }
+   .pairs2{
+     display: flex;
+     flex-direction: row;
+   }
+
+ }

@@ -295,7 +295,7 @@ return(
                   <h1> Marvel Character Library </h1>
 
                   <button onClick={(e) => navigate('/marvel')}>Visit Website</button>
-                  
+
                 </div>
               </div>
 
@@ -325,7 +325,7 @@ return(
                 <div className="gameTitle" >
                   <h1> Marvel Character Library </h1>
 
-                  <a href='https://www.gamedocs.app/'  target="_blank">Visit Website</a>
+                  <a href='https://www.gamedocs.app/user/RodH'  target="_blank">Visit Website</a>
                 </div>
               </div>
 

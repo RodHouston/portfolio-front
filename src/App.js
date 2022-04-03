@@ -14,10 +14,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route  path="/" element={<Home />} />
       </Routes>
       <Routes>
-        <Route exact path="/marvel" element={<Marvel />} />
+        <Route  path="/marvel" element={<Marvel />} />
       </Routes>
     </BrowserRouter>
 

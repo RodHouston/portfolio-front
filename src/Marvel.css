@@ -72,7 +72,7 @@
   }
 }
 .main{
-  background-image: url('../public/bg.jpeg');
+  background-image: url('../bg.jpeg');
   background-attachment: fixed;
 }
 

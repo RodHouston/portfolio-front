@@ -20,7 +20,7 @@ import { MdRealEstateAgent} from 'react-icons/md';
         </div>
 
       <div className="nav" id='nav'>
-        <NavLink  className="links firstLink" to="/">
+        <NavLink  className="links firstLink" to="/ ">
           Home
         </NavLink>
         <NavLink  className="links firstLink" to="/marvel">

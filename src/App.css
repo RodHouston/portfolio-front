@@ -400,7 +400,6 @@
   height: 400px;
   z-index: -3;
   margin: 50px auto;
-  position: relative;
 }
 .pcMobilePair{
 display: flex;
@@ -419,7 +418,7 @@ height: 100px;
 z-index: -3;
 padding: 10px;
 /* left: -500px; */
-top: 8%
+top: %
 
 
 }

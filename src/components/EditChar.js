@@ -1,4 +1,7 @@
 import {useState} from 'react'
+import React from 'react';
+
+
 
 const EditChar = (props) => {
   let emptyCharacter = {...props.character}

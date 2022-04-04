@@ -9,8 +9,11 @@ import { useNavigate } from "react-router-dom";
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript,
   IoLogoNodejs, IoLogoPython,IoLogoGoogle } from 'react-icons/io';
 import {SiJquery, SiReact, SiMongodb, SiJava, SiAndroidstudio, SiWindows,
-  SiAtom, SiAdobe, SiDjango, SiVisualstudiocode, SiPostgresql, SiMacos} from 'react-icons/si';
+  SiAtom, SiAdobe, SiDjango, SiVisualstudiocode, SiPostgresql, SiMacos,
+  } from 'react-icons/si';
 import {FaGitAlt, FaGithub} from 'react-icons/fa';
+import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+
 
 import VideoPlayer from 'react-video-js-player';
 
@@ -52,7 +55,7 @@ return(
         </div>
       </div>
       <Flip right cascade>
-        <p className='nameTitle'> Software Engineer</p>
+        <p className='nameTitle'> | Software Engineer |  </p>
       </Flip>
       <div className="contentContainer">
         <div className='sect section2'>
@@ -271,13 +274,13 @@ return(
           <div className='sect section4'>
             <div className='divShape4Top'>
             </div>
-              <h1> 4</h1>
+              <h1> Projects</h1>
               <div className='pcMobileSet'>
               <div className='pcMobilePairStrip'>
               </div>
-              <div className="gameTitle" >
-                <h1> Marvel Character Library </h1>
-                <button>Visit Website</button>
+              <div className="appTitle" >
+                <h1> Dragonball Character Library </h1>
+                <button className='btn3' >Visit Website</button>
               </div>
                 <div className='pcMobilePair'>
                     <img className='pcMock' src='./dbzPc.png' alt="Girl in a jacket"/>
@@ -291,10 +294,10 @@ return(
                 <div className='pcMobilePair'>
                     <img className='pcMock' src='./marvelPc.png' alt="Girl in a jacket"/>
                 </div>
-                <div className="gameTitle" >
+                <div className="appTitle" >
                   <h1> Marvel Character Library </h1>
 
-                  <button onClick={(e) => navigate('/marvel')}>Visit Website</button>
+                  <button className='btn3' onClick={(e) => navigate('/marvel')}>Visit Website</button>
 
                 </div>
               </div>
@@ -302,10 +305,12 @@ return(
               <div className='pcMobileSet'>
               <div className='pcMobilePairStrip'>
               </div>
-              <div className="gameTitle" >
-                <h1> Marvel Character Library </h1>
+              <div className="appTitle" >
+                <h1>Cyclepath Social App </h1>
+                <form>
+                  <button className='btn3' formAction='https://hidden-brook-22857.herokuapp.com/profile/Test/Test?UserName=Test&password=test' rel="noopener noreferrer">Visit Website</button>
+                </form>
 
-                <a href='https://hidden-brook-22857.herokuapp.com/profile/Test/Test?UserName=Test&password=test'>Visit Website</a>
               </div>
                 <div className='pcMobilePair'>
 
@@ -322,32 +327,64 @@ return(
 
                     <img className='pcMock' src='./gameDocPc.png' alt="Girl in a jacket"/>
                 </div>
-                <div className="gameTitle" >
-                  <h1> Marvel Character Library </h1>
-
-                  <a href='https://www.gamedocs.app/user/RodH' rel="noopener noreferrer"  target="_blank">Visit Website</a>
+                <div className="appTitle" >
+                  <h1> Game Document Design </h1>
+                  <form>
+                    <button className='btn3' formAction='https://www.gamedocs.app/user/RodH' rel="noopener noreferrer">Visit Website</button>
+                  </form>
                 </div>
               </div>
 
 
-
-
+              <div className='lapTopImag'>
+                <VideoPlayer
+                className='lapTopVid'
+                  // controls={true}
+                  src={"/marvelDemo.mov"}
+                  autoplay={true}
+                  width="290"
+                  height="175"
+                />
+              </div>
+              <div className='divShape3BottomDiv'>
+                <div className='divShape3Bottom'>
+                  <div className='divShape3Bottomtwo'>
+                  </div>
+                </div>
+                </div>
           </div>
 
-          <div className='sect section5'>
 
 
-            <div className='lapTopImag'>
-              <VideoPlayer
-              className='lapTopVid'
-                // controls={true}
-                src={"/marvelDemo.mov"}
-                autoplay={true}
-                width="290"
-                height="175"
-              />
+          <div className=' section5'>
+            <div className='divShape4Top'>
             </div>
-            <h1> 5</h1>
+
+
+            <h1> Contact Me</h1>
+
+            <form className='contactForm' formAction="mailto:Rod.Houston85@google.com"
+              method="POST"
+              encType="multipart/form-data"
+                  name="EmailForm">
+
+              Name:<br/>
+              <input className='input3' type="text" size="19" name="Contact-Name"/><br/><br/>
+              Email:<br/>
+              <input className='input3' type="email" name="Contact-Email"/><br/><br/>
+              Message:<br/>
+              <textarea className='input3' name="Contact-Message" rows="6" cols="20">
+              </textarea><br/><br/>
+              <button className='btn3'type="submit" value="Submit">Send</button>
+            </form>
+            <div className='socialLinkDivHead'>
+              <FaFacebookSquare className='icons'/>
+              <FaTwitterSquare className='icons'/>
+              <FaInstagramSquare className='icons'/>
+
+              <FaLinkedin className='icons'/>
+              <FaGithubSquare className='icons'/>
+            </div>
           </div>
         </div>
       </div>

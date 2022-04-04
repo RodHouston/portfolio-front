@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import { FaFacebookSquare, FaTwitterSquare, FaPinterestSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import { NavLink } from "react-router-dom";
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
 
 
 
@@ -14,18 +14,13 @@ import { FaFacebookSquare, FaTwitterSquare, FaPinterestSquare, FaLinkedin, FaGit
         <div className='socialLinkDivHead'>
           <FaFacebookSquare className='icons'/>
           <FaTwitterSquare className='icons'/>
-          <FaPinterestSquare className='icons'/>
+          <FaInstagramSquare className='icons'/>
           <FaLinkedin className='icons'/>
           <FaGithubSquare className='icons'/>
         </div>
 
-      <div className="nav" id='nav'>b
-        <Link  className="links firstLink" to="/marvel">
-          Marvel
-        </Link>
-        <Link  className="links firstLink" to="/ ">
-          Home
-        </Link>
+      <div className="nav" id='nav'>
+
 
       </div>
     </div>

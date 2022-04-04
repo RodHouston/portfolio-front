@@ -164,7 +164,7 @@ h1{
   display: block;
   text-align: center;
   margin: 0;
-  top:40vw;
+  top:35vw;
   left: 0;
   right: 0;
   transform: translateZ(-.5px) scale(2);
@@ -584,6 +584,9 @@ top: 100px;
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
+  }
+  .nameTitle{
+    top:60vw;    
   }
   .mobileColumn{
     flex-direction: column;
